@@ -7,9 +7,17 @@
     <title>Comandos en html</title>
 </head>
 <body>
-    <h1>comandos basicos de git</h1>
+    <h1>Comandos basicos de git</h1>
     
     <p>
+        <h3>Configuraciones</h3>
+        <strong>
+        git config --global user.email:</strong> cambia de manera global el email del usuario, seguidamente ponemos entre comillas nuestro nombre.<br>
+        <br>
+        <strong>
+        git config:</strong> muestra configuraciones de git también podemos usar –list para mostrar la configuración por defecto de nuestro git y si añadimos --show-origin inhales nos muestra las configuraciones guardadas y su ubicación.<br>
+        <br>
+        <h3>Comandos Basicos</h3>
         <strong>
         git init:</strong> lo usamos para determinar la carpeta en la que vamos a trabajar.<br>
         <br>
@@ -24,16 +32,31 @@
         <br>
         <strong>
         git commit:</strong> se usa para añadir un commit a nuestra rama, también podemos ponerle un -m seguidamente ponemos entre comillas nuestro ensaje.<br>
-        <br>
-        <strong>
-        git config:</strong> muestra configuraciones de git también podemos usar –list para mostrar la configuración por defecto de nuestro git y si añadimos --show-origin inhales nos muestra las configuraciones guardadas y su ubicación.<br>
-        <br>
-        <strong>
-        git config: --global user.name:</strong> cambia de manera global el nombre del usuario, seguidamente ponemos entre comillas nuestro nombre.<br>
-        <br>
-        <strong>
-        git config --global user.email:</strong> cambia de manera global el email del usuario, seguidamente ponemos entre comillas nuestro nombre.<br>
         <br><strong>
         git log:</strong> se usa para ver la historia de nuestros archivos, los commits, el usuario que lo cambió, cuando se realizaron los cambios etc. seguidamente ponemos el nombre de nuestro archivo.</p>
+        <br>
+
+        <h3>Fucion en local</h2>
+        <strong>
+        git merge (nombre rama):</strong>Fusiona una rama (nombre_rama) con la actual (con la rama que nos encotramos posicionado)<br>
+        <br>
+        <strong>
+        git merge (nombre rama) --allow-unrelated-histories:</strong>lo mismo que la anterior solamente que ahora lo obliga<br>
+        <br>
+
+
+        <h3>Comandos que van para repo local y remoto</h3>
+
+        <p><strong>git remote add origin (ssh o https):</strong> se usa para conectar el repo remoto con nuestro repo local(carpeta a la que hicimos git init).</p>
+        
+        <p><strong>git remote remove origin:</strong> Se usa para eliminar una conexion con el Repo Remoto.</p>
+
+        <p><strong>git <strong style ="color: red; font-size: 18px;">push </strong>origin (main):</strong> se usa para enviar los cambios commiteados al github.</p>
+
+        <p><strong>git <strong style ="color: green; font-size: 18px;">pull </strong> origin (main):</strong> descarga los cambios del repo remoto y los fuciona a (main) del local.</p>
+
+        <p><strong>pull origin (main) --allow-unrelated-histories:</strong> Obliga a fucionar la rama de origin (main) del repo REMOTO con la actual (con la rama en la que estemos posicionados del local)</p>
+        
+            
 </body>
 </html>
