@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos en html</title>
+</head>
+<body>
+    <h1>Comandos basicos de git</h1>
+    
+    <p>
+        <h3>Configuraciones</h3>
+        <strong>
+        git config --global user.email:</strong> cambia de manera global el email del usuario, seguidamente ponemos entre comillas nuestro nombre.<br>
+        <br>
+        <strong>
+        git config:</strong> muestra configuraciones de git también podemos usar –list para mostrar la configuración por defecto de nuestro git y si añadimos --show-origin inhales nos muestra las configuraciones guardadas y su ubicación.<br>
+        <br>
+        <h3>Comandos Basicos</h3>
+        <strong>
+        git init:</strong> lo usamos para determinar la carpeta en la que vamos a trabajar.<br>
+        <br>
+        <strong>
+        git status:</strong> lo usamos para saber si tenemos un archivo añadido o borrado en nuestro proyecto, para saber en la rama en la que estamos y si tenemos commits.<br>
+        <br>
+        <strong>
+        git add:</strong> es para añadir un archivo a nuestra rama seguidamente ponemos entre comillas el nombre de nuestro archivo o poner un punto para añadir todos los archios de nuestra carpeta.<br>
+        <br>
+        <strong>
+        git rm:</strong> lo usamos para borrar un archivo que hayamos añadido, <strong> eliminarlo por completo de nuestra rama usamos git rm --cached.</strong><br>
+        <br>
+        <strong>
+        git commit:</strong> se usa para añadir un commit a nuestra rama, también podemos ponerle un -m seguidamente ponemos entre comillas nuestro ensaje.<br>
+        <br><strong>
+        git log:</strong> se usa para ver la historia de nuestros archivos, los commits, el usuario que lo cambió, cuando se realizaron los cambios etc. seguidamente ponemos el nombre de nuestro archivo.</p>
+        <br>
+
+        <h3>Fucion en local</h2>
+        <strong>
+        git merge (nombre rama):</strong>Fusiona una rama (nombre_rama) con la actual (con la rama que nos encotramos posicionado)<br>
+        <br>
+        <strong>
+        git merge (nombre rama) --allow-unrelated-histories:</strong>lo mismo que la anterior solamente que ahora lo obliga<br>
+        <br>
+
+
+        <h3>Comandos que van para repo local y remoto</h3>
+
+        <p><strong>git remote add origin (ssh o https):</strong> se usa para conectar el repo remoto con nuestro repo local(carpeta a la que hicimos git init).</p>
+
+        <p><strong>git remote -v:</strong> se usa para para ver las conexiones existentes que hay con el repo remoto.</p>
+        
+        <p><strong>git remote remove origin:</strong> Se usa para eliminar una conexion con el Repo Remoto.</p>
+
+        <p><strong>git <strong style ="color: red; font-size: 18px;">push </strong>origin (main):</strong> se usa para enviar los cambios commiteados al github.</p>
+
+        <p><strong>git <strong style ="color: green; font-size: 18px;">pull </strong> origin (main):</strong> descarga los cambios del repo remoto y los fuciona a (main) del local.</p>
+
+        <p><strong>git pull origin (main) --allow-unrelated-histories:</strong> Obliga a fucionar la rama de origin (main) del repo REMOTO con la actual (con la rama en la que estemos posicionados del local)</p>
+        
+        <h3>RAMAS LOCALES COMANDOS</h3>
+        
+        <p><strong>git checkout #commit (archivo.txt)</strong> volvemos nuestro archivo a la version del commit indicada, sin cambiar nada en   el Stagign.</p>
+
+            <ul>
+                <ol><strong>git checkout master:</strong>volvemos nuestro archivo a version que teniamos antes de hacer el primer git checkout, sin cambiar nada en el Stagign.</ol>
+            </ul>
+        <p>faltan explicar que hacen</p>
+        <ol>
+            <ul>
+                git diff
+            </ul>
+            <ul>git diff #commit1 #commit2</ul>
+            <ul>git reset #commit --soft</ul>
+            <ul>git reset #commit --hard</ul>
+            <ul>git show (archivo.txt)</ul>
+            <ul>git log --stat</ul>
+        </ol>
+</body>
+</html>
