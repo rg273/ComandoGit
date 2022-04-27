@@ -172,7 +172,7 @@ import random
 #     if (num < meta):
 #         print("busca un numero mas alto")
 #     elif(num > meta):
-#         print("busca un numero mas bajo")
+#         print("busca un numero mas bajo") qXm+*-6e54z||   ,
 
 
 # numero_adivinar = random.randint(1,100)
