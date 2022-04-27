@@ -1,0 +1,241 @@
+/* Custom properties/variables  */
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+  }
+  
+  /* Base reset */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* box-sizing and font sizing */
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+  
+    /* Set font size for easy rem calculations
+     * default document font size = 16px, 1rem = 16px, 100% = 16px
+     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+    */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    
+      /* 
+      1_Posicionamieto 
+      2_Modelo de caja
+      3_Tipografia
+      4_Estilos visuales
+      5_Otros
+      */
+  }
+  h1,
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+  
+  h2 {
+    font-size: 4.2rem;
+  }
+  
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--main-white);
+}
+img {
+    display: block;
+    width: 100%;
+  }
+  /*  */
+header{
+      
+}
+#navbar{
+    
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color: #be3144;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 1);    
+    height: auto;
+    z-index: 10;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar li{
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+.welcome-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 99.93vh;
+    width: 100%;
+    background-color: #000;
+    background-image: linear-gradient(62deg,#3a3d40 0%,#181719 100%);
+}
+#welcome-section h1 {
+    color: var(--main-white);
+}
+#welcome-section > p{
+    text-align: center;
+    font-weight: 300;
+    font-size: 3rem;
+    font-style: italic;
+    color: var(--main-red);   
+}
+
+/*  */
+
+#projects{
+  width: 100%;
+  background-color: #45567d;
+  min-height: 180vh;
+  padding: 10rem 2rem;
+}
+#projects h2{
+  color: var(--main-white);
+  position: relative;
+  max-width: 640px;
+  left: calc(50% - 320px);
+  border-bottom: 0.2px solid var(--main-white);
+  margin: 0px 0px 40px 0px;
+}
+.project__plantilla{
+  background-color: #45567d;
+  max-width: 1288px;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 40px;
+}
+
+.project-tile{
+    width: 100%;
+    background-color: #181719;
+    text-align: center;
+    border-radius: 4px;
+    padding-bottom: 1rem;
+    box-shadow: 1px 0px 1px 1px rgba(50, 50, 50, 1);
+}
+.project-tile p {
+  margin-top: 1.4rem;
+}
+.project-tile img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 90%;
+}
+#projects button{
+  position: relative;
+  left: calc(50% - 60px);
+  margin: 60px 0px 0px 0px;
+  min-width: 140px;
+  height: 40px;
+  color: var(--main-white);
+  border: none;
+  font-weight: 100;
+  font-size: 2.1rem;
+  border-radius: 2px;
+  background: var(--main-gray);
+  /*  */
+  transition:  0.5s ease-out;
+}
+
+#projects button:hover{
+  background-color: var(--main-red);
+}
+#projects button:hover i{
+  transform: translateX(2px);  
+}
+#projects button i{
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+/*  */
+
+#contacts{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-gray);
+  text-align: center;
+}
+.contacts-title h3{
+  font-size: 5.4rem;
+  color: var(--main-white);
+}
+.contacts-title span{
+  color: var(--main-white);
+  font-size: 1.8rem;
+  font-weight: 100;
+  font-style: italic;
+}
+#contacts ul{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  font-size: 2.2rem;
+  
+}
+#contacts ul li {
+  box-shadow: 1px 1px 1px  black;  
+}
+#contacts ul i{
+  margin-right: 6px;
+}
+
+footer{
+  width: 100%;
+  height: 20vh;
+  border-top: 4px solid var(--main-red);
+  background-color: var(--main-gray);
+  
+}
+
+ footer div{ 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-white);
+  font-weight: 100;
+}
+footer div p:nth-child(1){
+  margin-right: 60px;
+} 

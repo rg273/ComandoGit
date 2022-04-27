@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+   
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body::before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    top:0px;
+    left: 0px;
+    position: fixed;
+    z-index: -1;
+    /* background-image: linear-gradient(120deg, rgba(25,25,25,0.7), rgba(200,22,25,0.8)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg); */
+    background-image: linear-gradient( 
+115deg, rgba(58, 58, 158, 0.8),
+ rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+  }
+  
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    color: aliceblue;
+}
+
+#description{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+}
+
+h1 {
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  
+  p {
+    font-size: 1.125rem;
+  }
+  
+  h1,
+  p {
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+  }
+#survey-form{
+    width: 640px;
+    background-color:  rgba(20, 40, 100, 1);
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    flex-direction: column; /*puede q este mal el flex*/
+    padding: 40px;
+}
+.form-group{
+    background-color:  rgba(20, 40, 100, 1);
+    margin-bottom: 1.25rem;
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    
+}
+#dropdown,
+#email,
+#name,
+#number,
+#mostlike{
+    width: 100%;
+    border: 1px solid ;
+    margin: 5px 0px;
+    height: 34px;
+    padding: 5px;
+    outline: none;
+}
+.into-clue{
+    display: flex;
+    text-align: end;
+}
+.extension {
+    margin-left: 0.25rem;
+    padding-top: 3px;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+}
+.coment-user{
+    height: 70px;
+    border-radius: 3px;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+.submit-button{
+    width: 100%;
+    height: 30px;
+    border-radius: 9px;
+    background-color: rgb(208, 255, 0);
+    border: none;
+    outline: none;
+    margin: none;
+}
+
+#creme{
+
+    margin-bottom: 10px;
+}
+[type="checkbox"]{
+    margin: 6px;
+}
+
+[type="radio"]{
+    margin: 8px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleFormulario2.css">
+
+    <title>Prueba 2 Free code camp</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">  <!-- EL for para asociar, El ID para darle el estilo-->
+                <p> Cual es tu nombre?</p>
+                <input type="text" name="nombre" id="name" placeholder="Enter your name" required>
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">
+                <p> Cual es tu Email?</p>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="number" id="number-label">
+                <div class="into-clue"><p> Cuantos años tienes?</p><span class="extension"> (optional)</span></div>
+                <input type="number" name="age" id="number" min="10" max="99" placeholder="Age">
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select name="role" id="dropdown" class="form-control">
+                <option disabled selected value>Select current role</option>
+                <option value="Student">Student</option>
+                <option value="Job">Full Time job</option>
+                <option value="Learner">Full Time Learner</option>
+                <option value="preferNO">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label for="option1">
+                <input type="radio" id="option1" name="user-recommend" value="definitely" class="input-radio" checked>Definitely
+            </label>
+            <label for="option2">
+                <input type="radio" id="option2" name="user-recommend" value="maybe" class="input-radio">Maybe
+            </label>
+            <label for="option3">
+                <input type="radio" name="user-recommend" id="option3" class="input-radio" value="notSure">Not sure
+            </label>
+        </div>
+        <div class="form-group">
+            <p>What is your favorite feature of freeCodeCamp?</p>
+            <select name="mostlike" id="mostlike" class="form-control">
+                <option disable selected value>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="proyects">Proyects</option>
+                <option value="community">Community</option>
+                <option value="openSource">Open Source</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <div class="into-clue"><p>What would you like to see improved?</p><span class="extension">(Check all that apply)</span></div>
+            <label for="Front">
+                <input type="checkbox" name="casillaDeVerificacion" id="Front" class="cuadritos" value="checkOne"> Front-end Proyects
+            </label>
+            <label for="Back-end">
+                <input type="checkbox" id="Back-end" value="Back-end" name="casillaDeVerificacion" class="cuadritos"> Back-end
+            </label>
+            <label for="data-visualization">
+                <input type="checkbox" id="data-visualization" value="data-visualization" name="casillaDeVerificacion" class="cuadritos">
+                Data visualization
+            </label>
+            <label for="Challenges">
+                <input type="checkbox" id="Challenges" value="Challenges" name="casillaDeVerificacion" class="cuadritos">
+                Challenges
+            </label>
+            <label for="open-souce-community">
+                <input type="checkbox" id="open-souce-community" value="open-souce-community" name="casillaDeVerificacion" class="cuadritos">
+                Open Souce Community
+            </label>
+            <label for="gitter-help-rooms">
+                <input type="checkbox" id="gitter-help-rooms" value="gitter-help-rooms" name="casillaDeVerificacion" class="cuadritos">
+                Gitter Help Rooms
+            </label>
+            <label for="videos">
+                <input type="checkbox" name="casillaDeVerificacion" value="videos" id="videos" class="cuadritos"> Videos
+            </label>
+            <label for="city-meetups">
+                <input type="checkbox" id="city-meetups" name="casillaDeVerificacion" class="duaritos" value="City-meetups">
+                City Meetups
+            </label>
+            <label for="wiki">
+                <input type="checkbox" id="wiki" value="wiki"
+                name="casillaDeVerificacion" class="cuadritos"> Wiki
+            </label>
+            <label for="Forum">
+                <input type="checkbox" name="casillaDeVerificacion" id="Forum" value="forum" class="cuadritos"> Forum
+            </label>
+            <label for="additional-courses">
+                <input type="checkbox" name="casillaDeVerificacion" id="additional-courses" value="additional-courses"> Additional Courses
+            </label>
+        </div>
+        <div class="form-group">
+            <span id="creme">Any comments or suggestions?</span>
+            <textarea class="coment-user" placeholder=" Enter your comment here..." name="coment-user" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="submit-button" id="submit" >Submit</button>
+        </div>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

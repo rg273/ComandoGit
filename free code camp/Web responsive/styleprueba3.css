@@ -1,0 +1,254 @@
+
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+header{
+    height: 50px;
+    position: fixed;
+    content: '';
+    z-index: 1;
+    width: 100%;
+    background-color: #eee;
+}
+nav{
+    background-color: #eee;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 70px;
+    width: auto;
+    height: auto;
+
+}
+@media(max-width:400px){
+    nav{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 1fr 30px;
+    }
+    #header-img{
+        margin-right: 20px;
+    }
+}
+#acomodar-first-logo{
+    width: 100%;
+    height: 70px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header-img{
+    width: 100%;
+    height: 40px;
+    background-color: #eee;
+}
+
+#nav-section {
+    min-width: 320px;
+    height: auto;
+    background-color:#eee;
+    margin: 0px 0px 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#nav-section ul{
+    list-style: none;
+    background-color: #eee;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+    
+#nav-section a{
+    text-decoration: none;
+    margin: 0px 10px;
+}
+/*header*/
+main{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    background-color:#eeeeee;
+}
+
+.main-section-search{
+    min-width: 320px;
+    text-align: center;
+    margin: auto;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+.main-div-search{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;   
+}
+.main-div-search h1{
+    margin-bottom: 7px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#email{
+    height: 30px;
+    width: 300px;
+    padding: 4px;
+    margin: 10px;
+}
+#submit{
+    border: none;
+    margin-bottom: 5px;
+    max-width: 140px;
+    background-color: orange;
+    height: 25px;
+    padding: 0 10px;
+    border-radius: 2px;
+    font-weight: 800;
+    font-size: medium;
+    cursor: pointer;
+}
+/*primer div*/
+.main-section-content{
+    width: 100%;
+    height: auto;
+    padding-top:40px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 110px 110px 110px;
+}
+.main-div-content{
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 120px auto;
+    margin: auto;
+    justify-self: center;
+    align-items: center;
+}
+.main-div-content i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    color: darkorange;
+}
+
+/* bideo */
+
+#howItWorks{
+    
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+#video{
+    max-width: 560px;
+    width: 100%;
+}
+
+/* caja de planes */
+
+#pricing{
+    margin-top: 60px;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 310px 310px 310px;
+    gap: 20px;
+}
+.gemelos{
+    min-height: 220px;
+    display: grid;
+    grid-template-rows: auto 2fr auto;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.gemelosHeader{
+    background-color:#dddddd;
+    height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.gemelosParteMedia >p {
+    margin-top: 18px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.gemelosParteMedia div{
+    margin: 20px;
+}
+
+.gemelosParteMedia div p{
+    font-size: 16px;
+    line-height: 28px;
+}
+.gemelosParteBaja{
+    height: auto;
+    
+}
+.gemelosParteBaja .submits{
+    
+    height: 38px;
+    width: 110px;
+    font-size: 18px;
+    font-weight:lighter;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 2px;
+    margin: 0px 0px 20px;
+}
+
+footer{
+    width: 100%;
+    text-align: end;
+    margin-top: 40px;
+}
+.last-box{
+    width: 70%;
+    height: auto;
+    background-color: #dddddd;
+    margin: auto;  
+    padding: 0px 20px 0px 0px;
+    
+}
+.last-box ol{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+.last-box ol li{
+    margin: 15px 20px 0px 0px;
+    
+}
+#last-p{
+    font-size: 14px;
+    font-weight: 400;
+    color: grey;
+    margin: 4px 10px 0px 0px;
+    padding-bottom: 20px;
+}
