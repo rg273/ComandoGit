@@ -50,11 +50,5 @@ def run():
     print(array[0:3])
 
 
-
-
-
-
-
-
 if __name__ =="__main__":
     run()
