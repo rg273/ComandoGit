@@ -18,5 +18,21 @@ header{
     display: grid;
     background-color: red;
     grid-template-rows: 1fr 1fr;
-    
+}
+header .haeder-icons-container{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #48cfad;
+}
+header .haeder-icons-container .icons {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    border: 1px black solid;
+    justify-self: end;
 }
