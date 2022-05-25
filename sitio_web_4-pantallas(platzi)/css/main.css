@@ -7,6 +7,16 @@ body{
     left: 0px;
     right: 0px;
 }
+main{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0),rgba(5,7,12,0.20)),
+    url(./assets/Sailing_Sea_Sunrises_and_sunsets_519129_1280x768.jpg);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 a{
     text-decoration: none;
     display: inline;
@@ -16,14 +26,12 @@ header{
     width: 100%;
     height: 140px;
     display: grid;
-    background-color: red;
     grid-template-rows: 1fr 1fr;
 }
 header .haeder-icons-container{
     width: 100%;
     height: 50px;
     display: grid;
-    background-color: #48cfad;
 }
 header .haeder-icons-container .icons {
     width: 300px;
@@ -33,6 +41,33 @@ header .haeder-icons-container .icons {
     align-items: center;
     justify-content: space-between;
     margin-right: 50px;
-    border: 1px black solid;
     justify-self: end;
+}
+header .icons span{
+    color: white;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+nav .nav-logo-container{
+    margin-left: 50px;
+    
+}
+nav .nav-logo-container img{
+    width: 220px;
+    margin-top: 10px;
+
+}
+nav .profile-link a{
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+nav .profile-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
 }
